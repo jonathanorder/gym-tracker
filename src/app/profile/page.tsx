@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
-import Navigation from '@/components/Navigation'
+import Navigation from '@/components/navigation'
 import { UserProfile } from '@/lib/types'
 
 export default function ProfilePage() {
