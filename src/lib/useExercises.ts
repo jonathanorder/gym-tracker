@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Exercise } from './types'
+import { Exercise } from '@/lib/types'
 
 export function useExercises() {
   const [exercises, setExercises] = useState<Exercise[]>([])

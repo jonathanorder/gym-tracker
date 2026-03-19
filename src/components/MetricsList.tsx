@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { supabase } from '../../lib/supabase'
-import { DailyMetric } from '../../lib/types'
+import { supabase } from '@/lib/supabase'
+import { DailyMetric } from '@/lib/types'
 
 interface MetricsListProps {
   userId: string
