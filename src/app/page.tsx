@@ -1,12 +1,11 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 
 export default function Home() {
   const router = useRouter()
-  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const checkAuth = async () => {
@@ -37,7 +36,7 @@ export default function Home() {
         console.error('Error checking auth:', error)
         router.push('/auth')
       } finally {
-        setLoading(false)
+        
       }
     }
 

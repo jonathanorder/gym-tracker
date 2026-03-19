@@ -62,7 +62,7 @@ export default function WorkoutList({ userId, refresh = 0 }: WorkoutListProps) {
         return
       }
 
-      setWorkouts(data || [])
+      setWorkouts((data || []) as unknown as WorkoutWithExercises[])
       setError(null)
     } catch (err: any) {
       setError(err.message)
