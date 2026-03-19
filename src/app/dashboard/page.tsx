@@ -2,13 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
-import Navigation from '@/components/navigation'
-import WorkoutForm from '@/components/workoutForm'
-import WorkoutList from '@/components/workoutList'
-import DailyMetrics from '@/components/dailyMetrics'
-import StatsCards from '@/components/statsCards'
-import MetricsList from '@/components/metricsList'
+import { supabase } from '../../lib/supabase'
+import Navigation from '../../components/navigation'
+import WorkoutForm from '../../components/workoutForm'
+import WorkoutList from '../../components/workoutList'
+import DailyMetrics from '../../components/dailyMetrics'
+import StatsCards from '../../components/statsCards'
+import MetricsList from '../../components/metricsList'
 
 export default function DashboardPage() {
   const router = useRouter()

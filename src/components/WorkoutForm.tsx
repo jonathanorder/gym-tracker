@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
-import { useExercises } from '@/lib/useExercises'
+import { supabase } from '../../lib/supabase'
+import { useExercises } from '../../lib/useExercises'
 import { X, Plus } from 'lucide-react'
 
 interface WorkoutExerciseInput {
